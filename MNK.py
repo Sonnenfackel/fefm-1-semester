@@ -27,7 +27,7 @@ XR = np.round(np.max(x))
 yr = np.round(np.min(y)) 
 YR = np.round(np.max(y))#определяем массив значений для функции (по факту это длина аппроксимационной прямой, у меня это минимальное и максимальное значения переменных, но можно свои) 
 x2 = np.arange(xr, XR, 0.05) 
-plt.plot(x2, b*x2 + a, color ='gray', label = f'{'b = ',round(float(b),2),'a=',round(float(a),2)}')#задаем график прямой и строим его
+plt.plot(x2, b*x2 + a, color ='gray', label = f'{ 'b = ',round(float(b),2),'a=',round(float(a),2)}')#задаем график прямой и строим его
 plt.title('Название графика', fontdict={'fontname': 'Times New Roman', 'fontsize': 20}) #называем график
 plt.xlabel('писать сюда')
 plt.ylabel('писать сюда') #называем оси
