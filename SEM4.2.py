@@ -1,0 +1,17 @@
+import numpy as np
+import matplotlib.pyplot as plt
+a1 = np.random.normal(0,5,10)
+a2 = np.random.normal(0,5,100)
+a3 = np.random.normal(0,5,1000)
+a4 = np.random.normal(0,5,10000)
+f = plt.figure(figsize=(3,4), dpi = 200)
+g1 = f.add_subplot(411)
+g2 = f.add_subplot(412)
+g3 = f.add_subplot(421)
+g4 = f.add_subplot(422)
+g1.hist(a1, 61, color = 'k', edgecolor = 'w', label = 'n = 10')
+g2.hist(a2, 61, color = 'k', edgecolor = 'w', label = 'n = 100')
+g3.hist(a3, 61, color = 'k', edgecolor = 'w', label = 'n = 1000')
+g4.hist(a4, 61, color = 'k', edgecolor = 'w', label = 'n = 10000')
+plt.legend()
+plt.show()
